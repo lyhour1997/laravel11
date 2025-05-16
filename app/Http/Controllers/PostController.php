@@ -11,6 +11,7 @@ class PostController extends Controller
     {
         $data['posts'] = DB::table('posts')
                     ->where('status',1)
+                    ->orderBy('id', 'desc')
                     ->get();
         return view('posts.index', $data);
     }

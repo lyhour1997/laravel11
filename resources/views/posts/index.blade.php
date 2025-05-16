@@ -3,14 +3,14 @@
 @extends('layouts.master')
 @section('content')
 
-<div class="container my-5">
+<div class="container my-5 p-0">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2 class="mb-0">Posts</h2>
         <a href="{{ url('posts/create') }}" class="btn btn-success btn-sm">Create Post</a>
     </div>
 
     <div class="table-responsive">
-        <table class="table table-hover table-bordered border-primary align-middle text-center">
+        <table class="table table-hover table-bordered border-primary align-middle ">
             <thead class="table-primary">
                 <tr>
                     <th class="fs-5">#</th>
