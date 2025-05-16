@@ -80,6 +80,9 @@ class PostController extends Controller
 
         if($del){
             return redirect('/');
+        }else{
+            return redirect('/')
+                ->with('error', "Failed to remove Data!");
         }
     }
 
